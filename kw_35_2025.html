@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wochenbericht KW35 2025, Teodora Stokic, Informatikerin EFZ, Fachrichtung Applikationsentwicklung</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/prism.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="96x96">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+  <meta name="msapplication-TileImage" content="images/favicon.png">
+</head>
+
+<body>
+
+  <!-- - - - - - - - - - - - Kopfzeile Start - - - - - - - - - - - -->
+  <header class="fade-in-up">
+
+    <!-- Logo Start -->
+    <a href="index.html">
+      <div class="logo">
+        <img src="images/logo.png"alt="Mein Foto">
+      </div>
+    </a>
+    <!-- Logo Ende -->
+
+    <!-- Text Start -->
+    <div class="titel">
+      <h1>Wochenbericht KW35 2025</h1>
+      Teodora Stokic<br>
+      Informatikerin EFZ, Fachrichtung Applikationsentwicklung
+    </div>
+    <!-- Text Ende -->
+
+    <!-- Navigation Start -->
+    <nav>
+      <div class="arrow"><a href="index.html" title="Back"><img src="images/arrow_back.png"></a></div>
+      <div class="overview"><a href="index.html" title="Overview"><img src="images/hamburger.png"></a></div>
+      <div class="arrow"><a href="kw_36_2025.html" title="Next"><img src="images/arrow_next.png"></a></div>
+    </nav>
+    <!-- Navigation Ende -->
+     <div class="uhr" id="uhr"></div>
+
+  </header>
+  <!-- - - - - - - - - - - - Kopfzeile Ende - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - Inhalt Start - - - - - - - - - - - -->
+  <main>
+    <!-- - - - - - - - - - - - Erste Spalte Start - - - - - - - - - - - -->
+    <section class="fade-in-up">
+
+      <!-- Beitrag Wochenbericht Start -->
+      <article class="fade-in-up">
+        <h2>Grundlagen der Datenstrukturen und Datentypen</h2>
+        <img src="images/Datentypen.jpg">
+        <legend><a href="https://gitlab.com/ch-tbz-it/Stud/m162/-/raw/main/Daten_Formate/images/Datentypen.jpg" target="_blank">
+      Datentypen
+    </a>
+        </legend>
+        <h4>Schon in den 1950er-Jahren wurden erste Methoden entwickelt, um Daten effizient zu strukturieren und schnell darauf zuzugreifen. Mit der wachsenden Menge an Informationen stieg die Bedeutung klarer Strukturen, die Speicherplatz optimal nutzen und schnelle Zugriffe ermöglichen. Wie genau diese Strukturen aussehen, welche Formen von Daten sie speichern und welche Methoden es gibt, um sie effizient zu verwalten, das wird nun genauer betrachtet.</h4>
+        <h3>Was ist eine Datenstruktur?</h3>
+        <p>In der Informatik bezeichnet man als Datenstruktur eine Methode, Daten so zu speichern und zu organisieren, dass sie effizient genutzt werden können. Dabei geht es nicht nur um die eigentlichen Daten, sondern auch um die Operationen, die auf ihnen ausgeführt werden, wie Einfügen, Löschen oder Suchen. Daten können unterschiedlich stark strukturiert sein: schwach strukturierte Daten wie freie Texte oder einfache Dokumente lassen sich nur schwer durchsuchen, während mässig strukturierte Daten wie Tabellen oder Listen bereits sortiert sind und sich einfacher auswerten lassen. Stark strukturierte Daten wie in Datenbanken bestehen aus vielen verknüpften Tabellen, in denen die Daten klar organisiert sind und komplexe Abfragen möglich machen. Neben strukturierten Daten gibt es unstrukturierte Daten, etwa Texte, Bilder oder Audioaufnahmen, die keine feste Ordnung haben. Grundsätzlich gilt: Je besser Daten organisiert sind, desto leichter lassen sie sich verarbeiten und analysieren, während die Strukturierung unstrukturierter Daten manchmal mit Informationsverlust verbunden sein kann.</p>
+        <p>Daten können diskret oder stetig sein. Diskrete Daten haben eine abzählbare Anzahl möglicher Werte. Stetige Daten hingegen sind nicht abzählbar. Ausserdem unterscheidet man Skalentypen: Bei der Nominalskala gibt es keine Rangordnung zwischen den Werten. Die Ordinalskala ordnet Werte in eine Reihenfolge. Bei der Kardinalskala sind die Werte geordnet und die Abstände zwischen ihnen interpretierbar. Ein weiterer wichtiger Aspekt ist die Häufbarkeit von Daten: Werte sind häufbar, wenn mehrere Antworten möglich sind und nicht häufbar, wenn nur eine Antwort erlaubt ist.</p>
+        <h3>Datentypen</h3>
+        <p>Datentypen legen fest, welche Art von Daten gespeichert werden kann und wie der Computer sie verarbeitet.</p>
+        <ul>
+          <li>Ganze Zahlen</li>
+          <li>Natürliche Zahlen</li>
+          <li>Dezimalzahlen</li>
+          <li>Aufzählungstypen</li>
+          <li>Boolean</li>
+          <li>Zeichen</li>
+          <li>Gleitkommazahlen</li>
+          <li>(Null-) Zeiger</li>
+          <li>Zeichenketten</li>
+          <li>Datum und Uhrzeit</li>
+          <li>Verbund</li>
+          <li>Binäre Datenobjekte</li>
+        </ul>
+        <h3>Datenformate</h3>
+        <p>Ein Datensatz ist eine kleine Sammlung von zusammengehörigen Daten. Zum Beispiel: Name, Telefonnummer und Adresse einer Person. Man kann sich das wie eine einzelne Zeile in einer Tabelle vorstellen. Viele Datensätze zusammen ergeben dann die ganze Tabelle.</p>
+        <p>Ein Array ist eine Datenstruktur, die eine feste Anzahl von Werten desselben Typs speichert. Alle Elemente liegen hintereinander im Speicher, sodass man direkt auf ein beliebiges Element zugreifen kann, indem man seine Position kennt.</p>
+        <p>Eine verkettete Liste funktioniert anders. Hier sind die Elemente nicht direkt nebeneinander gespeichert. Jedes Element enthält den Wert und einen Verweis auf das nächste Element in der Reihe. Dadurch kann man Elemente sehr einfach hinzufügen oder entfernen, ohne die gesamte Struktur verschieben zu müssen. Allerdings ist der Zugriff auf ein bestimmtes Element langsamer, weil man von Anfang an jedes Element der Reihe nach durchgehen muss, bis man das gewünschte erreicht. Verkettete Listen werden oft eingesetzt, wenn sich die Anzahl der Elemente häufig ändert oder wenn die Speichergrösse flexibel sein soll.</p>
+        <p>Eine weitere wichtige Struktur ist der Stack, auch Stapelspeicher genannt. Hier werden Elemente nach dem Prinzip „Last In, First Out“ (LIFO) gespeichert: Das zuletzt abgelegte Element wird zuerst wieder entnommen. Im Gegensatz dazu arbeitet die Queue, die Warteschlange, nach dem Prinzip „First In, First Out“ (FIFO): Das zuerst gespeicherte Element wird auch zuerst wieder entnommen. Eine Spezialform ist die Priority Queue, bei der Elemente nach Priorität statt nach Reihenfolge sortiert werden.</p>
+        <p>Graphen bestehen aus Punkten, die durch Linien miteinander verbunden sind. Jeder Punkt kann mehrere Verbindungen haben, nicht nur eine. Man kann sich das wie ein Strassennetz vorstellen: Die Orte sind die Punkte und die Strassen die Verbindungen. Graphen eignen sich, um Wege zu berechnen, Netzwerke darzustellen oder Beziehungen zwischen Objekten zu zeigen.</p>
+        <p>Ein Baum ist eine hierarchische Datenstruktur, bestehend aus Knoten. Jeder Knoten hat genau einen Elternknoten und kann mehrere Kindknoten besitzen. Ein Binärbaum ist ein spezieller Baum, bei dem jeder Knoten höchstens zwei Kinder hat. Bäume eignen sich besonders für schnelle Suche, Sortierung und strukturierte Speicherung von Daten.</p>
+        <p>Heaps sind Bäume, bei denen immer das wichtigste Element an der Spitze liegt.</p>
+        <p>Eine Hashtabelle speichert Werte ebenfalls in einer Reihe, aber nicht nach der Reihenfolge, in der sie hinzugefügt werden. Stattdessen wird jedem Wert ein Schlüssel zugeordnet. Dieser Schlüssel wird durch eine sogenannte Hash-Funktion in eine Speicherposition umgerechnet, sodass man den Wert sehr schnell finden kann, ohne die gesamte Struktur durchsuchen zu müssen. Hashtabellen eignen sich besonders gut, wenn man sehr grosse Datenmengen effizient durchsuchen will.</p>
+        <!-- Ich habe mich bewusst gegen <br> entschieden -->
+         <h3>Fazit</h3>
+        <p>Strukturen von Daten sind das Fundament jeder Software. Sie bestimmen, wie schnell und zuverlässig Informationen gespeichert und abgerufen werden können. Mit den richtigen Datenstrukturen lassen sich Daten effizient organisieren und sinnvoll nutzen.</p>
+      </article>
+      <!-- Beitrag Wochenbericht Ende -->
+
+    </section>
+    <!-- - - - - - - - - - - - Erste Spalte Ende - - - - - - - - - - - -->
+
+
+    <!--- - - - - - - - - - - Zweite Spalte Start - - - - - - - - - - - -->
+    <section class="fade-in-up">
+
+      <!-- Tagesreflexionen Start -->
+      <h2>Tagesreflexionen</h2>
+      <i>Was ist mir gut gelungen? Wo hatte ich Probleme? Was habe ich heute gelernt? Was würde ich anders machen? Was
+        würde ich wieder so machen? Wie habe ich mich gefühlt? Wie haben andere mich erlebt?</i><br><br>
+      <hr>
+      <strong>Zürich TBZ, Montag, 25. August 2025</strong><br>
+      Am Montag habe ich viel Neues gelernt, vor allem zu Datentypen, Datenstrukturen und IPERKA. Besonders gut gelungen ist mir, dass ich aktiv mitgemacht und mich beteiligt habe. Etwas schwierig war das schnelle Tempo, deshalb möchte ich mir künftig vorher kurz die Unterlagen anschauen. Ich fand es gut, dass ich aktiv mitgemacht habe, und das möchte ich auch in Zukunft so beibehalten. Ich war motiviert und wach, weshalb ich glaube, dass andere mich positiv und aufmerksam wahrgenommen haben.
+      <hr>
+      <strong>Zürich TBZ, Dienstag, 26. August 2025</strong><br>
+      Am Dienstag lernte ich in Englisch durch Interviews meine Mitschüler besser kennen, was mir leichtfiel und mir half, mit allen ins Gespräch zu kommen. In ABU behandelten wir Gross- und Kleinschreibung sowie rechtliche Grundlagen des dualen Bildungssystems, was für mich neu war. Mathematik war vor allem Wiederholung von Einheiten. Schwierigkeiten hatte ich keine, ich fühlte mich wohl und denke, dass andere mich als aufmerksam und vorbereitet wahrgenommen haben.
+      <hr>
+      <strong>Zürich ZLI, Mittwoch, 27. August 2025</strong><br>
+      Am Mittwoch starteten wir mit dem Wochenbericht. Ich lernte Visual Studio Code kennen und konnte HTML und CSS wiederholen. Besonders gut gelang mir die Word-Vorlage, weil ich die Formatierung sauber hinbekam. Schwieriger war das Zehnfingersystem mit Tipp10, da ich bisher anders tippe. Rückblickend hätte ich lieber mehr Zeit für den Wochenbericht genommen, weil er bis Mittwoch abgegeben werden muss. Insgesamt war ich zufrieden und glaube, dass andere mich als konzentriert wahrgenommen haben.
+      <hr>
+      <strong>Zürich ZLI, Donnerstag, 28. Monat 2025</strong><br>
+      Am Donnerstag lernte ich viel über Feedback, Selbstführung und Teamarbeit. Spannend war für mich, dass ich im Team die Rolle der Perfektionistin und Macherin habe. Bei der Gruppenpräsentation gab es Kommunikationsprobleme, da wir uns noch nicht gut kennen. Trotzdem war das Ergebnis einheitlich und gelungen. Ich würde die Zusammenarbeit aktiver gestalten, die Präsentation aber wieder so machen. Ich war nervös und wurde wohl auch so wahrgenommen.
+      <hr>
+      <strong>Zürich ZLI, Freitag, 29. August 2025</strong><br>
+      Am Freitag lernte ich SMART-Ziele kennen und stellte fest, dass ich ein visueller Lerntyp bin. Zudem installierte ich WinSCP zur Dateiübertragung. Probleme hatte ich, als ich HTML-Dateien in den Ordner „wochen“ verschob, wodurch CSS- und JS-Pfade nicht mehr funktionierten. Nach viel Zeit mit Anpassungen löschte ich den Ordner wieder. Trotz Frust und Zeitverlust gelang mir der Wochenbericht fast fertigzustellen. Ich blieb konzentriert, half anderen und wurde wohl als freundlich wahrgenommen.
+      <hr>
+      <!-- Tagesreflexionen Ende -->
+
+      <!-- Leistungen Start -->
+      <h2>Leistungen</h2>
+      <i>Mit diesen Leistungen bin ich …</i><br><br>
+      <i>… (sehr) zufrieden:</i>
+      <hr>
+      <strong>ZLI:</strong> Ich bin sehr zufrieden mit der Gestaltung und dem Inhalt meines Wochenberichts.
+      <hr>
+      <strong>BZZ/TBZ/SFGZ:</strong> Ich bin zufrieden mit der Projektauswahl im Modul 431 und besonders mit der Auftragsformulierung meiner Gruppe, die auch vom Lehrer gelobt wurde.
+      <hr>
+      <i>… (eher) unzufrieden:</i>
+      <hr>
+      <strong>ZLI:</strong> Ich bin unzufrieden mit meinem bisherigen Ergebnis im Zehnfingersystem. In der ersten Lektion erreichte ich knapp unter 100 Anschläge bei einer Fehlerquote von rund 10 %.
+      <hr>
+      <strong>BZZ/TBZ/SFGZ:</strong> Unzufrieden bin ich damit, dass der Lesetest, den die TBZ zur Anpassung des Unterrichts an uns Lernende einsetzt, technisch nicht richtig funktioniert hat. Ich habe den Test vollständig bearbeitet und mir Mühe gegeben, doch beim Auswerten trat ein Fehler auf, sodass er nicht gespeichert wurde und ich ihn wie einige andere auch erneut machen muss.
+      <hr>
+      <!-- Leistungen Ende -->
+
+      <!-- Ziele Start -->
+      <h2>Ziele</h2>
+      <i>Diese Ziele nehme ich mir für die kommende Woche vor!</i>
+      <hr>
+      <strong>ZLI:</strong> Als Ziel im ZLI nehme ich mir vor, in Tipp 10, Lektion 1, 200 Anschläge pro Minute zu erreichen und dabei eine Fehlerquote von unter 5 Prozent zu haben.<br>
+      <hr>
+      <strong>BZZ/TBZ/SFGZ:</strong> Mein Ziel an der TBZ ist es, mich in jedem Fach mindestens einmal aktiv zu melden.<br>
+      <hr>
+      <!-- Ziele Ende -->
+
+      <!-- Bemerkungen Start -->
+      <h2>Bemerkungen</h2>
+      <i>Ergänzungen / Dies hat mich diese Woche besonders geärgert. / Dies hat mich besonders gefreut. / Dies wollte
+        ich noch sagen. / Etc.</i>
+      <hr> Quellen der Bilder:
+      <br>
+      <a href="https://png.pngtree.com/png-vector/20250304/ourmid/pngtree-spring-pink-flowers-clipart-vector-png-image_15717621.png" target="_blank">
+      Favicon Blume
+    </a>
+      <br>
+    <a href="https://thumb.ac-illust.com/c3/c366ba7a158617c1a1f94c04fb32bcb4_t.jpeg" target="_blank">
+      Stimmungslage Icon
+    </a>
+      <hr>
+      <!-- Bemerkungen Ende -->
+
+      <!-- Stimmungen Start !!! Bitte entsprechender Radiobutton auf «checked="checked"» setzten !!! -->
+      <h2>Stimmungslage</h2>
+      <hr>
+      <img src="images/icon_happy.png" style="width: 30px; height: 30px; vertical-align: -20px;">&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="stimmungslage" >&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="stimmungslage" checked="checked">&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="stimmungslage">&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="stimmungslage">&nbsp;&nbsp;&nbsp;
+      <img src="images/icon_sad.png" style="width: 30px; height: 30px; vertical-align: -20px;">
+      <hr>
+      <!-- Stimmungen Ende -->
+
+    </section>
+    <!-- - - - - - - - - - - - Zweite Spalte Ende - - - - - - - - - - - -->
+  </main>
+  <!-- - - - - - - - - - - - Inhalt Ende - - - - - - - - - - - -->
+
+
+  <!-- - - - - - - - - - - - Fusszeile Start - - - - - - - - - - - -->
+  <footer class="fade-in-up">
+    <strong>Wochenbericht KW35 2025</strong><br>
+    Teodora Stokic<br>
+    Informatikerin EFZ, Fachrichtung Applikationsentwicklung<br><br>
+  </footer>
+  <!-- - - - - - - - - - - - Fusszeile Ende - - - - - - - - - - - -->
+
+  <script src="js/fadein.js"></script>
+  <script src="js/prism.js"></script>
+</body>
+
+</html>
