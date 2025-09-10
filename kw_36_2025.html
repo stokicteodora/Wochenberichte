@@ -55,82 +55,69 @@
 
       <!-- Beitrag Wochenbericht Start -->
       <article class="fade-in-up">
-        <h2>Aussagekräftiger Haupttitel erstes Wochenthema Lerndokumentation</h2>
-        <img src="images/maquette.jpg">
-        <legend>Die Bildlegende deklariert/beschreibt den Bildinhalt und enthält die Bildquelle und Urheberschaft.
+        <h2>JSON: Grundlagen, Aufbau und Anwendung</h2>
+        <img src="images/json_hand.jpg"alt="Person hält ein Blatt Papier mit JSON-Code in der Hand">
+        <legend><a href="https://www.pexels.com/photo/a-person-holding-a-paper-11035481/" alt="Person hält ein Blatt Papier mit JSON-Code in der Hand">
+      JSON
+    </a>
         </legend>
-        <h4>Zusammenfassende Einleitung in das dokumentierte Wochenthema mittels zwei bis drei Sätzen. Duis autem vel
-          eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-          facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
-          duis dolore te feugait nulla facilisi.</h4>
-        <h3>Untertitel</h3>
-        <p>Ein Absatz besteht aus einem oder mehreren Sätzen eines fortlaufenden Textes. Der im Absatz enthaltene Text
-          hat meist einen eigenen Sinnzusammenhang und beschreibt somit ein eigenes kleines Thema. Lorem ipsum dolor sit
-          amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-          no sea takimata sanctus est.</p>
-        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-          duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua.</p>
-        <h3>Untertitel</h3>
-        <p>Ein Absatz besteht aus einem oder mehreren Sätzen eines fortlaufenden Textes. Der im Absatz enthaltene Text
-          hat meist einen eigenen Sinnzusammenhang und beschreibt somit ein eigenes kleines Thema. Duis autem vel eum
-          iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-          facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
-          duis dolore te feugait nulla facilisi.</p>
+        <h4>JSON (JavaScript Object Notation) ist ein textbasiertes Datenformat, das Informationen in einer klar strukturierten und leicht lesbaren Form darstellt. Es wurde Ende der 1990er-Jahre von Douglas Crockford spezifiziert und hat sich seither als Standard für den Datenaustausch etabliert.</h4>
+        <h3>Wie funktioniert JSON?</h3>
+        <p>Ein JSON-Dokument beginnt und endet immer mit geschweiften Klammern { }. Innerhalb dieser Klammern werden Objekte definiert, die aus Name/Wert-Paaren bestehen. Ein Name (oder Schlüssel) wird dabei durch einen Doppelpunkt : vom Wert getrennt. Der Wert kann wiederum ein einfaches Element, ein weiteres Objekt oder ein Array sein.
+        </p>
         <ul>
-          <li>Aufzählung duis autem vel eum
-          <li>Iriure dolor in hendrerit</li>
-          <li>In vulputate velit esse molestie</li>
-          <li>Consequat vel dolor</li>
+          <li>Boolean: Wahrheitswerte true oder false.</li>
+          <li>Zahlen: Ganzzahlen, Dezimalzahlen oder Exponentialzahlen.</li>
+          <li>Strings: Text in doppelten Anführungszeichen.</li>
+          <li>Null: Repräsentiert die Abwesenheit eines Werts.</li>
         </ul>
-        <p>Ein Absatz besteht aus einem oder mehreren Sätzen eines fortlaufenden Textes. Der im Absatz enthaltene Text
-          hat meist einen eigenen Sinnzusammenhang und beschreibt somit ein eigenes kleines Thema. Ut wisi enim ad minim
-          veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+        <p>
+        JSON basiert auf zwei grundlegenden Strukturen: Objekte und Arrays. Objekte sind ungeordnete Sammlungen von Name/Wert-Paaren, die in geschweifte Klammern eingeschlossen sind und durch Kommas voneinander getrennt werden. Arrays hingegen sind geordnete Listen von Werten, die in eckige Klammern gesetzt und ebenfalls durch Kommas getrennt werden. Werte in JSON können dabei beliebig verschachtelt sein, sodass ein Array Objekte enthalten kann oder ein Objekt selbst wieder Arrays beinhaltet.
+        </p>
+         <h3>Beispiel</h3>
+        <pre><code>
+          {
+          "name": "Fiona Fischer",
+          "alter": 33,
+          "verheiratet": true,
+          "kinder": ["Anna", "Nik"],
+          "adresse": {
+          "strasse": "Beispielstrasse1",
+          "stadt": "Beispielstadt",
+          "plz": "12345" 
+          }
+        }</code></pre> 
+        <ul>
+          <li><strong>name</strong> ist ein String</li>
+          <li><strong>alter</strong> ist eine Zahl</li>
+          <li><strong>verheiratet</strong> ist ein Boolean</li>
+          <li><strong>kinder</strong> ist ein Array</li>
+          <li><strong>adresse</strong> ist ein verschachteltes Objekt</li>
+        </ul>
+        <h3>Verwendung</h3>
+        <p>JSON wird vor allem genutzt, um Daten übersichtlich zu speichern und zwischen Programmen auszutauschen. In Webanwendungen hilft es, Informationen vom Browser zum Server zu senden und umgekehrt, und erleichtert so die Zusammenarbeit verschiedener Programmiersprachen.</p>
+        <h3>Vor- und Nachteile von JSON</h3>
+        <p>JSON ist ein beliebtes Format für den Datenaustausch, weil es leicht zu lernen und einfach zu benutzen ist. Die Syntax ist übersichtlich, sodass die Daten sowohl für Menschen als auch für Maschinen gut lesbar sind.
+        </p>
+        <p>Vorteile von JSON:</p>
+        <ul>
+          <li>Leicht verständlich und einfach zu schreiben: Die Struktur ist übersichtlich, wodurch Einsteiger sie schnell lernen können.</li>
+          <li>Programmiersprachenunabhängig: JSON kann mit fast allen Programmiersprachen genutzt werden.</li>
+          <li>Schnell und effizient:JSON-Daten lassen sich leicht übertragen und verarbeiten.</li>
+          <li>Flexibel einsetzbar: Es eignet sich für viele Anwendungen und Systeme.</li>
+        </ul>
+        <p>Nachteile von JSON:</p>
+        <ul>
+          <li>Grössere Dateigrösse: JSON benötigt manchmal mehr Speicherplatz als Binärformate.</li>
+          <li>Bestimmte Datentypen fehlen: Z.B. Datum oder Binärdaten können nicht direkt gespeichert werden.</li>
+          <li>Keine automatische Datenvalidierung: JSON prüft die Daten selbst nicht auf Fehler.</li>
+        </ul>
         <h3>Fazit</h3>
-        <p>Ein <a href="https://www.google.com/search?client=firefox-b-d&q=fazit" target="_blank">Fazit</a> ist eine
-          wertende Zusammenfassung, in welchem die Ergebnisse und Erkenntnisse beschrieben und daraus Schlussfolgerungen
-          gezogen werden. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+        <p>JSON ermöglicht eine klare Strukturierung und den einfachen Austausch von Daten zwischen Programmen. Es sorgt für effiziente Speicherung und eine zuverlässige Kommunikation in Webanwendungen</p>
       </article>
       <!-- Beitrag Wochenbericht Ende -->
 
-      <!-- Beitrag Wochenbericht Start -->
-      <article class="fade-in-up">
-        <h2>Aussagekräftiger Haupttitel zweites Wochenthema Lerndokumentation</h2>
-        <img src="images/maquette.jpg">
-        <legend>Die Bildlegende deklariert/beschreibt den Bildinhalt und enthält die Bildquelle und Urheberschaft.
-        </legend>
-        <h4>Zusammenfassende Einleitung in das dokumentierte Wochenthema mittels zwei bis drei Sätzen. Duis autem vel
-          eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-          facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
-          duis dolore te feugait nulla facilisi.</h4>
-        <h3>Untertitel</h3>
-        <p>Ein Absatz besteht aus einem oder mehreren Sätzen eines fortlaufenden Textes. Der im Absatz enthaltene Text
-          hat meist einen eigenen Sinnzusammenhang und beschreibt somit ein eigenes kleines Thema. At vero eos et
-          accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-          dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-          dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p>
-        <h3>Untertitel</h3>
-        <p>Ein Absatz besteht aus einem oder mehreren Sätzen eines fortlaufenden Textes. Der im Absatz enthaltene Text
-          hat meist einen eigenen Sinnzusammenhang und beschreibt somit ein eigenes kleines Thema. Duis autem vel eum
-          iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-          facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
-          duis dolore te feugait nulla facilisi.</p>
-        <ul>
-          <li>Aufzählung duis autem vel eum
-          <li>Iriure dolor in hendrerit</li>
-          <li>In vulputate velit esse molestie</li>
-          <li>Consequat vel dolor</li>
-        </ul>
-        <h3>Fazit</h3>
-        <p>Ein Fazit ist eine wertende Zusammenfassung, in welchem die Ergebnisse und Erkenntnisse beschrieben und
-          daraus Schlussfolgerungen gezogen werden. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-          molestie consequat.</p>
-      </article>
-      <!-- Beitrag Wochenbericht Ende -->
+     
 
     </section>
     <!-- - - - - - - - - - - - Erste Spalte Ende - - - - - - - - - - - -->
@@ -148,16 +135,16 @@
       Am Montag habe ich in der Schule JSON kennengelernt. Nachmittags habe ich am Projekt gearbeitet und mit Lasten- und Pflichtenheft begonnen (Lastenheft beschreibt Anforderungen, Pflichtenheft die Umsetzung). Die Projektplanung ist mir gut gelungen. Im Modul 162 hatte ich Schwierigkeiten, zuhause konnte ich es aber in Ruhe verstehen. Das nächste Mal würde ich früher schlafen gehen, das ruhige Nacharbeiten beibehalten und hoffe, dass andere meine Müdigkeit nicht bemerkt haben.
       <hr>
       <strong>Zürich TBZ, Dienstag, 02. September 2025</strong><br>
-      Tagesreflektion (min. 200 und max. 500 Zeichen)
+      Am Dienstag haben wir in Englisch einen Stadtrundgang gemacht, der mir viel Spass gemacht hat, und ich glaube, die anderen konnten das auch wahrnehmen. In ABU haben wir die Mediathek erkundet & einen Bericht über die letzten Wochen geschrieben. Das nächste Mal würde ich die Schriftgrösse anpassen, da wir eine Seite füllen mussten und ich klein geschrieben habe und bin mit dem Inhalt etwas unzufrieden. Beibehalten würde ich meine konzentrierte Arbeitsweise, und ich konnte viel in Mathe erledigen.
       <hr>
       <strong>Zürich ZLI, Mittwoch, 03. September 2025</strong><br>
-      Tagesreflektion (min. 200 und max. 500 Zeichen)
+      Am Mittwoch habe ich mit p5.js gearbeitet. Ich musste durch Ausprobieren lernen, was anfangs schwer war. Mit den zwei Gesichtern, die ich gestaltet habe, bin ich zufrieden, aber das nächste Mal würde ich dafür weniger Zeit aufwenden. Manchmal war ich verärgert, weil ich bei Aufgaben nicht weiterkam, doch wenn ich etwas selbständig lösen konnte, fühlte es sich belohnend an. Ich glaube, die anderen haben mich vielleicht auch als gestresst wahrgenommen, da ich am Morgen Probleme mit WinSCP hatte.
       <hr>
       <strong>Zürich ZLI, Donnerstag, 04. September 2025</strong><br>
-      Tagesreflektion (min. 200 und max. 500 Zeichen)
+      Am Donnerstag haben wir mit p5.js gearbeitet und GitHub kennengelernt. Ich war frustriert, weil vieles nicht wie geplant lief, besonders beim „Pixelate Picture“. Bei der Git-Einführung habe ich den Anschluss verpasst, da ich hinten sass. Nächstes Mal sitze ich weiter vorne, um besser folgen zu können. Die p5.js-Aufgaben liefen gut, da ich mit frischen Gedanken schneller vorankam. Die anderen haben mich wohl als verzweifelt wahrgenommen. Das ist normal, denn manchmal klappt es nicht sofort.
       <hr>
       <strong>Zürich ZLI, Freitag, 05. September 2025</strong><br>
-      Tagesreflektion (min. 200 und max. 500 Zeichen)
+      Am Freitag haben wir ein Gruppenprojekt gemacht, auch wenn ich Gruppenarbeit nicht so mag, hat es mir Spass gemacht. Jedoch war es schwierig, da es erst unser 3. Tag mit p5.js war. Obwohl der Auftrag spannend war, bin ich mit dem Resultat nicht ganz zufrieden. Ich habe gelernt, was responsiver Code bedeutet, und wir bekamen Einblicke in die Nutzung von KI. Ich war gut gelaunt und wurde auch so wahrgenommen. Nächstes Mal plane ich die Zeit besser und entwickel vorher eine Vision des Ergebnisses.
       <hr>
       <!-- Tagesreflexionen Ende -->
 
@@ -166,15 +153,16 @@
       <i>Mit diesen Leistungen bin ich …</i><br><br>
       <i>… (sehr) zufrieden:</i>
       <hr>
-      <strong>ZLI:</strong> Eintrag Leistungen ZLI …
+      <strong>ZLI:</strong> Ich bin zufrieden, dass ich in dieser Woche gelernt habe, was p5.js ist und mich ausserdem im Tastaturschreiben verbessern konnte. Zwar habe ich mein Ziel von 200 Anschlägen pro Minute mit weniger als 5 % Fehlerquote noch nicht erreicht, dennoch erkenne ich deutliche Fortschritte. Während der Gleitzeiten habe ich fast ausschliesslich mit Tipp10 geübt und insgesamt etwa 1,5 Stunden investiert. Aktuell liege ich bei rund 140 Anschlägen pro Minute mit einer Fehlerquote von 7 %, was im Vergleich zur letzten Woche bereits eine spürbare Verbesserung ist.
       <hr>
-      <strong>BZZ/TBZ/SFGZ:</strong> Eintrag Leistungen BZZ/TBZ/SFGZ …
+      <strong>BZZ/TBZ/SFGZ:</strong> Ich bin zufrieden damit, dass ich in Mathematik sehr schnell vorankam und viel erledigen konnte. Ausserdem konnte ich mein Ziel von letzter Woche erreichen, indem ich mich in jedem Fach mindestens einmal aktiv gemeldet habe.
       <hr>
       <i>… (eher) unzufrieden:</i>
       <hr>
-      <strong>ZLI:</strong> Eintrag Leistungen ZLI …
+      <strong>ZLI:</strong> Ich bin unzufrieden damit, dass die Gruppenarbeit meiner Meinung nach nicht so gelungen ist. Beim Zusammensetzen unserer Codes wurde mein Teil verändert, was für mich ärgerlich war, da ich viel Zeit investiert hatte, meine Idee umzusetzen, den Code zu verstehen und Kommentare hinzuzufügen. Ich merke, dass ich eher eine Person bin, die lieber alleine arbeitet, und hatte deshalb Mühe mit der Gruppenarbeit. 
+Ausserdem bin ich unzufrieden, dass ich p5.js noch nicht so gut beherrsche. Besonders beim Auftrag "Pixelate Picture" habe ich weiterhin Schwierigkeiten und konnte die Aufgabe bisher nicht lösen.
       <hr>
-      <strong>BZZ/TBZ/SFGZ:</strong> Eintrag Leistungen BZZ/TBZ/SFGZ …
+      <strong>BZZ/TBZ/SFGZ:</strong> Mit den meisten Sachen bin ich zufrieden. Unzufrieden bin ich jedoch, dass ich im Modul 162 trotz vorherigem Durchsehen der Unterlagen am Vortag Mühe hatte, mitzuhalten.
       <hr>
       <!-- Leistungen Ende -->
 
@@ -182,9 +170,9 @@
       <h2>Ziele</h2>
       <i>Diese Ziele nehme ich mir für die kommende Woche vor!</i>
       <hr>
-      <strong>ZLI:</strong> Eintrag Zielsetzung ZLI …<br>
+      <strong>ZLI:</strong> Mein Ziel ist es, meinen Wochenbericht erfolgreich mittels GitHub zu deployen.<br>
       <hr>
-      <strong>BZZ/TBZ/SFGZ:</strong> Eintrag Zielsetzung BZZ/TBZ/SFGZ …<br>
+      <strong>BZZ/TBZ/SFGZ:</strong> Ich habe bald eine Mathematikprüfung und eine Prüfung zum Modul 162. Deshalb ist es mein Ziel, bis Ende dieser Woche zwei gute Zusammenfassungen zu schreiben. So kann ich nächste Woche möglichst gut vorbereitet in die Prüfungen gehen.<br>
       <hr>
       <!-- Ziele Ende -->
 
@@ -193,7 +181,7 @@
       <i>Ergänzungen / Dies hat mich diese Woche besonders geärgert. / Dies hat mich besonders gefreut. / Dies wollte
         ich noch sagen. / Etc.</i>
       <hr>
-      Bemerkung / Diese Woche habe ich keine Bemerkungen.
+      Diese Woche habe ich keine Bemerkungen.
       <hr>
       <!-- Bemerkungen Ende -->
 

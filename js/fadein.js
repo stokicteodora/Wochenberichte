@@ -36,3 +36,5 @@ function updateClock() {
 // Sofort starten + jede Sekunde updaten
 updateClock();
 setInterval(updateClock, 1000);
+
+
