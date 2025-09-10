@@ -414,3 +414,8 @@ ul {
     opacity: 1;
     transform: translateY(0);
 }
+/* ----------- Ende Fade in ----------------------------------------------------------------------- */
+body {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><text x="0" y="48" font-size="48">🐭</text></svg>') 32 48, auto;
+}
+
