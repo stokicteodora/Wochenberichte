@@ -418,4 +418,22 @@ ul {
 body {
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><text x="0" y="48" font-size="48">🐭</text></svg>') 32 48, auto;
 }
+#scrollBar {                    /*# ist für ID, . ist für Klasse*/
+  position: fixed;              
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0%;
+  background: green;
+  z-index: 9999;
+}
+#monkey {
+  position: fixed;                 /*bleibt an der Position auch beim scrollen. Dadurch kann es parallel zum Balken bewegt werden.*/         
+  left: 0;                        /*startet links am Bildschirm */
+  top: -25px;                    /*Abstand nach oben, damit es auf der Leiste ist*/
+  width: 100px;                 /*Grösse des Affen*/
+  z-index: 1000;               /*Der Affe liegt über normalen Inhalten, aber unter dem Balkent*/
+  transform: rotate(10deg);   /*Drehen des Affen*/
+  transform-origin: bottom left; /*er kippt von der unteren linken Ecke nach rechts oben*/
+}
 
