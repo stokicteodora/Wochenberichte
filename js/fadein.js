@@ -63,3 +63,25 @@ window.addEventListener('scroll', () => { /*window = das sichtbare Browserfenste
   monkey.style.left = newWidth - monkey.offsetWidth + 'px'; /*monkey.offsetWidth → Breite des Affen-Bildes. 
   Setze den Affen so, dass er genau am Ende des Balkens hängt, nicht davor.*/
 });
+function setCursor(emoji) {
+  // Neues kleines Canvas erstellen
+  const canvas = document.createElement('canvas');
+  canvas.width = 64;  // Breite
+  canvas.height = 64; // Höhe
+
+  // 2D-Zeichenwerkzeug holen
+  const ctx = canvas.getContext('2d');
+
+  // Emoji in die Mitte zeichnen
+  ctx.font = '24px serif';       // Grösse des Emojis
+  ctx.textAlign = 'center';      // Horizontal zentrieren
+  ctx.textBaseline = 'middle';   // Vertikal zentrieren
+  ctx.fillText(emoji, 16, 16);   // Zeichnen bei (16,16) = Mitte
+
+  // Canvas in ein Bild umwandeln
+  const image = canvas.toDataURL();
+
+  // Cursor auf der Seite ändern
+  document.body.style.cursor = `url(${image}) 16 16, auto`;
+}
+

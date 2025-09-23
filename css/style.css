@@ -436,4 +436,32 @@ body {
   transform: rotate(10deg);   /*Drehen des Affen*/
   transform-origin: bottom left; /*er kippt von der unteren linken Ecke nach rechts oben*/
 }
+.tooltip {
+    position: relative;   /* Damit das kleine Info-Feld später genau über dem Symbol sitzt */
+    cursor: pointer;      /* Maus zeigt eine Hand, wenn man über das Symbol fährt */
+    color: #007acc;       /* Farbe des Symbols (blau) */
+}
+
+.tooltiptext {
+    visibility: hidden;   /* Der Text ist zuerst unsichtbar */
+    width: 220px;         /* Breite des Textfeldes */
+    background-color: #e0f7fa; /* Hintergrundfarbe des Textes */
+    color: #000;          /* Textfarbe schwarz */
+    text-align: center;   /* Text wird zentriert */
+    padding: 5px;         /* Innenabstand, damit Text nicht gequetscht ist */
+    border-radius: 6px;   /* Abgerundete Ecken des Textfeldes */
+    position: absolute;   /* Text kann jetzt genau positioniert werden */
+    z-index: 1;           /* Text erscheint über anderen Elementen */
+    bottom: 125%;         /* Text erscheint über dem Symbol */
+    left: 50%;            /* Text horizontal in der Mitte des Symbols */
+    transform: translateX(-50%); /* Text genau zentriert */
+    font-size: 0.9rem;    /* Schriftgröße etwas kleiner */
+    opacity: 0;           /* Text unsichtbar, Übergang möglich */
+    transition: opacity 0.3s; /* Sanftes Einblenden beim Hover */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;  /* Text wird sichtbar, wenn man über das Symbol fährt */
+    opacity: 1;           /* Text wird vollständig sichtbar */
+}
 
