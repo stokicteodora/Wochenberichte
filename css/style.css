@@ -464,4 +464,38 @@ body {
     visibility: visible;  /* Text wird sichtbar, wenn man über das Symbol fährt */
     opacity: 1;           /* Text wird vollständig sichtbar */
 }
+/* Positioniert den Countdown unten rechts auf der Webseite */
+.halloween-countdown {
+  position: fixed;      /* bleibt immer sichtbar beim Scrollen */
+  bottom: 20px;         /* Abstand vom unteren Rand */
+  right: 20px;          /* Abstand vom rechten Rand */
+  text-align: center;   /* zentriert Text und Zahlen */
+  font-family: Arial, sans-serif;
+  z-index: 1000;        /* sorgt dafür, dass es über anderen Elementen liegt */
+}
+
+/* Grösse des Halloween-Bildes */
+.ghost-img {
+  width: 200px;         /* Bildbreite in Pixel */
+  display: block;       /* eigenes Block-Element */
+}
+
+/* Position und Design der Zahl im weissen Quadrat */
+.count-box {
+  position: absolute;   /* frei positionierbar über dem Bild */
+  top: 40%;             /* vertikale Position (abhängig vom Bild) */
+  left: 25%;            /* horizontale Position (abhängig vom Bild) */
+  transform: translate(-50%, -50%); /* exakte Zentrierung */
+  font-size: 32px;      /* Schriftgrösse der Zahl */
+  font-weight: bold;    /* Zahl fett darstellen */
+  color: black;         /* Schriftfarbe */
+}
+
+/* Beschriftung "Halloween Countdown" unterhalb des Bildes */
+.count-text {
+font-family: 'Noto Sans', sans-serif;
+  margin-top: 5px;      /* Abstand zum Bild */
+  font-size: 14px;      /* Schriftgrösse */
+  color: rgb(233, 188, 180);        
+}
 
