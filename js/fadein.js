@@ -84,4 +84,27 @@ function setCursor(emoji) {
   // Cursor auf der Seite ändern
   document.body.style.cursor = `url(${image}) 16 16, auto`;
 }
+function updateCountdown() {
+  // heutiges Datum
+  const today = new Date();
+
+  // Halloween-Datum für dieses Jahr
+  const year = today.getFullYear();
+  const halloween = new Date(`October 31, ${year} 00:00:00`);
+
+  // Differenz in Millisekunden
+  const diff = halloween - today;
+
+  // in Tage umrechnen
+  const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+
+  // Zahl im HTML setzen
+  document.getElementById("days-left").textContent = daysLeft;
+}
+
+// direkt beim Laden starten
+updateCountdown();
+
+// einmal pro Stunde aktualisieren
+setInterval(updateCountdown, 1000 * 60 * 60);
 
